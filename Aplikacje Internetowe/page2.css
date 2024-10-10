@@ -1,0 +1,140 @@
+/* page2.css */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaeaea;
+}
+
+header, footer {
+    background-color: #1a252f; 
+    color: #e1e8ed;
+    padding: 25px 0;
+    text-align: left; 
+    border-bottom: 3px solid #ecf0f1; 
+}
+
+header h1 {
+    font-size: 3.5em;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    color: #00bcd4; 
+}
+
+header h2 {
+    font-size: 2em;
+    margin: 10px 0 0 0;
+    font-weight: 200;
+    font-style: italic;
+    color: #ff9800; 
+}
+
+main {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    background-color: blanchedalmond;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h3 {
+    font-size: 1.8em;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #7f8c8d;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 40px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    border-style: dotted ;
+    text-align: center;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ecf0f1;
+}
+
+@media screen and (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    h3 {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
+
+img {
+    width: 100%;
+    max-width: 600px; /* Maksymalna szerokość obrazu */
+    height: auto;
+}
+
+section img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
