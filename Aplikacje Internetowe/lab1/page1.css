@@ -1,0 +1,76 @@
+/* page1.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header, footer {
+    background-color: #eaeaea; 
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #ccc; 
+}
+
+main {
+    padding: 30px;
+    background-color: #f9f9f9; 
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 0.7em 0;
+    color: #333; 
+    font-family: 'Georgia', serif; 
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin: 0.5em 0;
+    color: #555;
+    font-family: 'Arial', sans-serif;
+    font-weight: 400;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+p {
+    line-height: 1.6;
+    margin: 0.5em 0;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ul li{
+    margin: 5px;
+    border-width: 2px;
+    border-style: solid hidden solid solid;
+    border-color: bisque;
+}
+
+img {
+    width: 100%;
+    max-width: 600px; 
+    height: auto;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section{
+    padding: 5px;
+}
