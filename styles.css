@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.container {
+    width: 50%;
+    margin: 80px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#taskList .task-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#taskList .task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#taskList .task-item .task-content {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+#taskList .task-item .task-content span,
+#taskList .task-item .task-content input {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#taskList .task-item .task-content .edit-input {
+    flex: 1;
+}
+
+#taskList .task-item .task-content .task-date,
+#taskList .task-item .task-content .edit-date {
+    min-width: 150px; 
+    margin-left: 10px;
+}
+
+#taskList .task-item .task-content .task-date {
+    cursor: pointer;
+}
+
+#taskList .task-item .task-content .edit-date {
+    flex: 0;
+}
+
+#taskList .task-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#taskList .task-item button.delete-button {
+    background-color: #e74c3c;
+}
+
+#addTaskForm {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.add-task-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.add-task-inputs input {
+    width: calc(50% - 5px);
+    padding: 10px;
+    font-size: 16px;
+}
+
+#addTaskButton {
+    background-color: #2ecc71; 
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+mark {
+    background-color: yellow;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#taskList .task-item .edit-input,
+#taskList .task-item .edit-date {
+    padding: 5px;
+    font-size: 16px;
+}
+
+#taskList .task-item span {
+    font-size: 16px;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-item .task-content .task-date,
+.task-item .task-content .edit-date {
+    margin-left: 10px;
+}
+
+.task-item .task-content .edit-input,
+.task-item .task-content span {
+    flex: 1;
+    min-width: 0;
+}
+
+.task-item .task-content .edit-date,
+.task-item .task-content .task-date {
+    flex: 0 0 150px;
+}
