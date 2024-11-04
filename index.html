@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa Puzzle z Esri i Leaflet Image</title>
+    <style>
+        /* Stylizacja układu 2x2 */
+        #container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 10px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .placeholder {
+            border: 1px solid #ccc;
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 100%; /* Proporcje 1:1 */
+        }
+        .content {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        /* Stylizacja przycisków */
+        #controls {
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        button {
+            margin-right: 5px;
+        }
+        /* Stylizacja elementów puzzli */
+        .puzzle-piece {
+            width: 25%;
+            height: 25%;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+        /* Ustawienia dla placeholderów puzzli */
+        #placeholder3 .content, #placeholder4 .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /* Stylizacja dla stref upuszczania puzzli */
+        .drop-zone {
+            width: 25%;
+            height: 25%;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+        }
+    </style>
+    <!-- Dołączenie stylów Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<div id="controls">
+    <button id="getLocationBtn">Moja lokalizacja</button>
+    <button id="puzzleBtn">Puzzle</button>
+</div>
+
+<div id="container">
+    <!-- Placeholder 1: Mapa wycentrowana na moją lokalizację -->
+    <div id="placeholder1" class="placeholder">
+        <div class="content">
+            <div id="map" style="width: 100%; height: 100%;"></div>
+        </div>
+    </div>
+    <!-- Placeholder 2: Obraz mapy -->
+    <div id="placeholder2" class="placeholder">
+        <div class="content" id="mapImageContainer">
+            <!-- Obraz mapy zostanie tutaj wstawiony -->
+        </div>
+    </div>
+    <!-- Placeholder 3: Pomieszane puzzle -->
+    <div id="placeholder3" class="placeholder">
+        <div class="content">
+            <!-- Elementy puzzli zostaną tu dodane -->
+        </div>
+    </div>
+    <!-- Placeholder 4: Ułożenie puzzli -->
+    <div id="placeholder4" class="placeholder">
+        <div class="content">
+            <!-- Użytkownik układa puzzle tutaj -->
+        </div>
+    </div>
+</div>
+
+<!-- Dołączenie biblioteki Leaflet -->
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<!-- Dołączenie biblioteki Esri Leaflet -->
+<script src="https://unpkg.com/esri-leaflet"></script>
+<!-- Dołączenie biblioteki leaflet-image -->
+<script src="https://rawgit.com/mapbox/leaflet-image/gh-pages/leaflet-image.js"></script>
+<!-- Dołączenie pliku JS -->
+<script src="script.js"></script>
+
+</body>
+</html>
